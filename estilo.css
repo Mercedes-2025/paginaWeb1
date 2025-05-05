@@ -1,0 +1,102 @@
+*{margin:0;
+border: 0;
+padding: 0;
+}
+
+
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#E7C84C;
+    position: relative;
+    font-size: 5em;
+    float: left;
+    left: 4em;
+    z-index: 1000;
+
+}
+.he{
+    width: 100%;
+    height: 450px;
+}
+
+header h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#E7C84C ;
+    position: relative;
+    font-size: 36px;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.imagenfondo img{
+    width: 100%; /* largo imagen */
+    height: 450px; /* ancho imagen*/
+    top: -10em;
+    position: relative;
+    
+    overflow-x: hidden;
+
+}
+.logoheader img{
+    width: 12%;
+    height: auto;
+    position: relative;
+    float: right;
+    right: 1em;
+    top: -25em;
+    overflow-x: hidden;
+
+
+}
+.contacto h2{
+   left: 75em;
+    position: relative;    
+    bottom: 13em;
+    font-size: 1em;
+    display:grid;
+    overflow-x: hidden;
+}
+
+.publicidad{
+    width: 20%;
+    height: 10%;
+    float: right;
+    position: relative;
+}
+
+.publi{
+    width: 100%;
+    margin-left: 55%;
+    overflow-x: hidden;
+    height: 800px;
+    top: -20em;
+}
+
+.imgEm{
+    width: 40%;
+
+}
+.img1{
+    width: 50%;
+    margin-left: 12%;
+
+}
+.img2{
+    width: 18%;
+    margin-left: 30%;
+    margin-top: -21%;
+}
+.img3{
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -10;
+}
+.img4{
+    width: 10%;
+    margin-left: 20%;
+    margin-top: -30;
+}
+
+body{
+    background-color:#F0D759 ;
+}
