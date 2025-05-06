@@ -1,102 +1,157 @@
 *{margin:0;
 border: 0;
 padding: 0;
+font-family: "Kanchenjunga";
 }
 
 
-header h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#E7C84C;
-    position: relative;
-    font-size: 5em;
-    float: left;
-    left: 4em;
-    z-index: 1000;
+/*---------------------- CLASES DE TIPOGRAFÍAS -------------------------------------*/
+.kanchenjunga-regular {
+    font-family: "Kanchenjunga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanchenjunga-medium {
+    font-family: "Kanchenjunga", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanchenjunga-semibold {
+    font-family: "Kanchenjunga", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanchenjunga-bold {
+    font-family: "Kanchenjunga", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }  
 
+
+header h1{
+    font-family:'Kanchenjunga';
+    color:#320000;
+    position: relative;
+    font-size: 8em;
+    float: left;
+    left: 3em;
+    z-index: 1000;
+    top: 1.5em;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de colores */    
+    border-radius: 20px;
+    padding: 5px;
 }
 .he{
     width: 100%;
     height: 450px;
 }
 
-header h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#E7C84C ;
-    position: relative;
-    font-size: 36px;
-    z-index: 100;
-    overflow-x: hidden;
-}
-
+/* ------------------ IMAGEN DE FONDO DEL HEADER ------------------*/
 .imagenfondo img{
     width: 100%; /* largo imagen */
-    height: 450px; /* ancho imagen*/
-    top: -10em;
-    position: relative;
-    
-    overflow-x: hidden;
-
+    height: 40em; /* ancho imagen*/
+    top: -14em;
+    position: relative; 
 }
+/* ---------------- LOGO PIZZA DELIVERY DEL HEADER ---------------*/
 .logoheader img{
-    width: 12%;
-    height: auto;
     position: relative;
-    float: right;
-    right: 1em;
-    top: -25em;
-    overflow-x: hidden;
-
-
-}
-.contacto h2{
-   left: 75em;
-    position: relative;    
-    bottom: 13em;
-    font-size: 1em;
-    display:grid;
-    overflow-x: hidden;
-}
-
-.publicidad{
     width: 20%;
-    height: 10%;
+    height: auto;    
     float: right;
-    position: relative;
+    left: 6em;
+    bottom: 40em;
+}
+/* ---------------- CONTACTO CELULAR EN EL LOGO DE PIZZA --------*/
+.contacto h2{   
+    position: relative; 
+
+    color: #E7C84C;   
+    bottom: 12em;
+    font-size: 2em;
+    float: right;
+    right: 6em;
+    font-family:'Kanchenjunga' ;
+    transform: rotate(-10deg); /* Gira el texto 45 grados */
+}
+/* ---------------- PUBLICIDAD LATERAL DERECHA EN EL BODY --------*/
+.publicidad{
+    width: 15%;
+    height: auto;
+    float: right;   
+    position: relative;    
+    left:30em;
+    bottom: 10em;
 }
 
 .publi{
-    width: 100%;
-    margin-left: 55%;
-    overflow-x: hidden;
+    float: right;    
+    width: 100%; 
     height: 800px;
-    top: -20em;
+    bottom: 30em;
 }
-
-.imgEm{
-    width: 40%;
-
+/* ----------------------- GALERIA DEL BODY ----------------------*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 60px;
+    position: relative;
+    top: 10em;
+    left: 80px;    
 }
-.img1{
-    width: 50%;
-    margin-left: 12%;
-
+/* --------------- IMAGEN LA GALERIA ----------------  */
+.galeria img{  
+    top: 5em;
+    display: flex; 
+    position:relative;      
+    width: 110%;
+    height:60%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    left: 6em;
 }
-.img2{
-    width: 18%;
-    margin-left: 30%;
-    margin-top: -21%;
+/* --------------- TEXTO DE LA FOTO -----------------   */
+.galeria h4{
+    position: relative;
+    top: 4em;
+    color: #E7C84C;    
+    font-family:'Kanchenjunga'; 
+    font-size: 15px;  
+    text-align: center;  
+    left: 7em;  
 }
-.img3{
-    width: 15%;
-    margin-left: 55%;
-    margin-top: -10;
+/* --------------- PRECIO DE LOS PRODUCTOS -------------*/
+.galeria p{
+    position: relative;        
+    top: 4em;
+    color: #E7C84C;
+    font-weight: 700;
+    text-align: center;
+    left: 7em;
 }
-.img4{
-    width: 10%;
-    margin-left: 20%;
-    margin-top: -30;
+/* --------------- BOTÓN DE COMPRA ---------------------*/
+.compra{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));   
+    top: 2em;    
+    border: none;  
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    left: 7em;  
+    transition: background-color 0.3s ease; /* Transición suave */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    background-color: #45a049; /* Nuevo color del botón */
 }
 
 body{
-    background-color:#F0D759 ;
+    background: linear-gradient(to bottom right,#c57d56,#320000);
 }
