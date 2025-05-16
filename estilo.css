@@ -1,157 +1,172 @@
 *{margin:0;
 border: 0;
 padding: 0;
-font-family: "Kanchenjunga";
 }
 
-
-/*---------------------- CLASES DE TIPOGRAFÍAS -------------------------------------*/
-.kanchenjunga-regular {
-    font-family: "Kanchenjunga", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .kanchenjunga-medium {
-    font-family: "Kanchenjunga", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .kanchenjunga-semibold {
-    font-family: "Kanchenjunga", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .kanchenjunga-bold {
-    font-family: "Kanchenjunga", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }  
-
-
-header h1{
-    font-family:'Kanchenjunga';
-    color:#320000;
-    position: relative;
-    font-size: 8em;
-    float: left;
-    left: 3em;
-    z-index: 1000;
-    top: 1.5em;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de colores */    
-    border-radius: 20px;
-    padding: 5px;
+header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #E7C84C;
+  font-size: 5em;
+  text-align: center; /* centra el texto */
+  margin: 0 auto; /* centra el elemento */
 }
+
+body{
+    background-color:  rgb(9, 87, 41);
+}
+
 .he{
     width: 100%;
     height: 450px;
 }
 
-/* ------------------ IMAGEN DE FONDO DEL HEADER ------------------*/
+header h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#E7C84C ;
+    position: relative;
+    font-size: 36px;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
 .imagenfondo img{
     width: 100%; /* largo imagen */
-    height: 40em; /* ancho imagen*/
-    top: -14em;
-    position: relative; 
-}
-/* ---------------- LOGO PIZZA DELIVERY DEL HEADER ---------------*/
-.logoheader img{
+    height: 500px; /* ancho imagen*/
+    top: -10em;
     position: relative;
-    width: 20%;
-    height: auto;    
-    float: right;
-    left: 6em;
-    bottom: 40em;
+    overflow-x: hidden;
 }
-/* ---------------- CONTACTO CELULAR EN EL LOGO DE PIZZA --------*/
-.contacto h2{   
-    position: relative; 
 
-    color: #E7C84C;   
-    bottom: 12em;
-    font-size: 2em;
-    float: right;
-    right: 6em;
-    font-family:'Kanchenjunga' ;
-    transform: rotate(-10deg); /* Gira el texto 45 grados */
-}
-/* ---------------- PUBLICIDAD LATERAL DERECHA EN EL BODY --------*/
-.publicidad{
-    width: 15%;
+.logoheader img{
+    width: 12%;
     height: auto;
-    float: right;   
-    position: relative;    
-    left:30em;
-    bottom: 10em;
+    position: relative;
+    float: right;
+    right: 1em;
+    top: -25em;
+    overflow-x: hidden;
 }
+
+.contacto h2{
+   left: 75em;
+    position: relative;    
+    bottom: 13em;
+    font-size: 1em;
+    display:grid;
+    overflow-x: hidden;
+}
+
+
 
 .publi{
-    float: right;    
-    width: 100%; 
+    width: 100%;
+    margin-left: 55%;
+    overflow-x: hidden;
     height: 800px;
-    bottom: 30em;
-}
-/* ----------------------- GALERIA DEL BODY ----------------------*/
-.galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 60px;
-    position: relative;
-    top: 10em;
-    left: 80px;    
-}
-/* --------------- IMAGEN LA GALERIA ----------------  */
-.galeria img{  
-    top: 5em;
-    display: flex; 
-    position:relative;      
-    width: 110%;
-    height:60%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    left: 6em;
-}
-/* --------------- TEXTO DE LA FOTO -----------------   */
-.galeria h4{
-    position: relative;
-    top: 4em;
-    color: #E7C84C;    
-    font-family:'Kanchenjunga'; 
-    font-size: 15px;  
-    text-align: center;  
-    left: 7em;  
-}
-/* --------------- PRECIO DE LOS PRODUCTOS -------------*/
-.galeria p{
-    position: relative;        
-    top: 4em;
-    color: #E7C84C;
-    font-weight: 700;
-    text-align: center;
-    left: 7em;
-}
-/* --------------- BOTÓN DE COMPRA ---------------------*/
-.compra{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));   
-    top: 2em;    
-    border: none;  
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    left: 7em;  
-    transition: background-color 0.3s ease; /* Transición suave */
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-button:hover{
-    background-color: #45a049; /* Nuevo color del botón */
+    top: -20em;
 }
 
-body{
-    background: linear-gradient(to bottom right,#c57d56,#320000);
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.publicidadMate{
+    width: 20%;
+    height: 10%;
+    float: right;
+    position: relative;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.img1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img1 {
+  
+  height: 150px; /* ajusta el alto según sea necesario */
+  object-fit: cover;
+}
+
+.compra {
+  font-family: monospace;
+  font-style: bold;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+
+
+
+
+footer{
+    background-color:  #f3e62f;
+    bottom: 0;
+}
+.footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 30px 20px 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-section h4 {
+    color: #ffcb05;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #ffcb05;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #888;
 }
