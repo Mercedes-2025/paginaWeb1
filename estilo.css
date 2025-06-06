@@ -3,18 +3,17 @@ border: 0;
 padding: 0;
 }
 
-header h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #E7C84C;
-  font-size: 5em;
-  text-align: center; /* centra el texto */
-  margin: 0 auto; /* centra el elemento */
-}
 
-body{
-    background-color:  rgb(9, 87, 41);
-}
+header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#E7C84C;
+    position: relative;
+    font-size: 5em;
+    float: left;
+    left: 4em;
+    z-index: 1000;
 
+}
 .he{
     width: 100%;
     height: 450px;
@@ -31,12 +30,13 @@ header h2{
 
 .imagenfondo img{
     width: 100%; /* largo imagen */
-    height: 500px; /* ancho imagen*/
+    height: 450px; /* ancho imagen*/
     top: -10em;
     position: relative;
+    
     overflow-x: hidden;
-}
 
+}
 .logoheader img{
     width: 12%;
     height: auto;
@@ -45,8 +45,9 @@ header h2{
     right: 1em;
     top: -25em;
     overflow-x: hidden;
-}
 
+
+}
 .contacto h2{
    left: 75em;
     position: relative;    
@@ -56,7 +57,12 @@ header h2{
     overflow-x: hidden;
 }
 
-
+.publicidad{
+    width: 20%;
+    height: 10%;
+    float: right;
+    position: relative;
+}
 
 .publi{
     width: 100%;
@@ -70,103 +76,75 @@ header h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
-    padding: 5px;
+    gap: 150px;
+    padding: 20px;
     margin-top: 10px;
 }
-.publicidadMate{
-    width: 20%;
-    height: 10%;
-    float: right;
-    position: relative;
+
+.imgEm img{
+    width: 30%;
+    
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.imgEm h4{
+    left: 30px;
 }
 
-.img1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.imgEm{
+    transform: translate(-5px);
+
 }
 
-.img1 {
+.compra{
+    font-family: monospace;
+    font-style: bold;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.imgempa img{
+    width: 30%;
   
-  height: 150px; /* ajusta el alto según sea necesario */
-  object-fit: cover;
+}
+.imgempa{
+   float: left;
+    position: relative;
+    left: 16em;
+    top: -28em;
+   
+}
+.imgpizza img{
+    width: 30%;
+}
+.imgpizza{
+    float: left;
+    position: relative;
+    left: 40em;
+    top: -20%
 }
 
-.compra {
-  font-family: monospace;
-  font-style: bold;
-  border: none;
-  padding: 8px 12px;
-  margin-top: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
+.imgpizza2 img{
+    width: 30%;
+}
+.imgpizza2{
+    float: left;
+    position: relative;
+    left: 16em;
+    top: -80%
 }
 
 
-
-
-
-
-footer{
-    background-color:  #f3e62f;
-    bottom: 0;
+.imgpizza img{
+    width: 30%;
 }
-.footer {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    padding: 30px 20px 10px 20px;
-    font-size: 0.9rem;
-    margin-top: 40px;
+.imgpizza2 img{
+    width: 30%;
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 180px;
-}
-
-.footer-section h4 {
-    color: #ffcb05;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section li {
-    margin-bottom: 5px;
-}
-
-.footer-section a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-    color: #ffcb05;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
-    color: #888;
+body{
+    background-color:#F0D759 ;
 }
